@@ -8,7 +8,7 @@
     .row {padding: 0 2%;}
 }
 
-/*for small tablets and big tablets: from 768px - 1023px */
+/*for small tablets to big tablets: from 768px - 1023px */
 @media only screen and (max-width:1023px) {
     body {font-size: 18px;}
     section {padding: 60px 0;}
@@ -16,13 +16,14 @@
         width: 80%;
         margin-left: 10%;
     }
-    .icon-small {font-size: 17px;
-                margin-right: 5px;}
+    .icon-small {
+        font-size: 17px;
+        margin-right: 5px;
+    }
     .skills-box {
         font-size: 100%;
         margin-left: 0%;
     }
-    
     .my-photo {
         height: 230px;
         margin-left: 37%;
@@ -30,39 +31,36 @@
         border-radius: 60%;
         margin-bottom: 15px;
     }
-
     .long-copy{
         line-height: 130%;
         width: 90%;
         text-align:justify; 
     }
-
     blockquote{
         font-style: italic;
         margin-left: 10%;
         font-size: 110%;
     }
-
     .content ul,
     .skills-box ul {
         list-style: none;
-        font-size: 60%;
         text-align: left;
+        font-size: 60%;
         margin-left: 5%;
     }
-
+    
     .content ul li,
     .skills-box ul li {padding: 10px 0;}
     .skills-box {width: 105%;}
     .row-3 {width: 110%;}
 }
 
-/*for small phones and tablets: from 481px - 767px */
+/*for small phones to small tablets: from 481px - 767px */
 @media only screen and (max-width:767px) {
     body {font-size: 16px;}
     section {
         width: 90%;
-        padding: 5% 0;
+        padding: 5% 5%;
     }
     .row,
     .hero-text-box {padding: 0 4%;}
@@ -76,16 +74,21 @@
         padding: 20px;
         font-size: 65%;
     }
- 
-    .main-nav {display:none;}
+    .main-nav {display: none;}
     .mobile-nav-icon {display:inline-block;}
     .main-nav {
         float: left;
-        margin-top: 25px;
-        margin-left: 25px;
+        margin-top: 30px;
+        margin-left: 20px;
         font-size: 100%;
     }
-    .main-nav li {display: block;}
+    
+    .main-nav li {
+        display: block;
+        margin-right: 20px;
+        margin-top: 5px;
+        
+    }
     
     .main-nav li a:link,
     .main-nav li a:visited {
@@ -135,6 +138,11 @@
         margin-left: 5%;
     }
     
+    #myBtn {
+        bottom: 20%; /* Place the button at the bottom of the page */
+        right: 5px; /* Place the button 30px from the right */
+    }
+    
     .section-other {
         display: block;
         background-color: #eaeaea;
@@ -154,7 +162,7 @@
 @media only screen and (max-width:480px) {
     section {padding: 25px 0;}
     header{
-        height: 75vh;   
+        height: 65vh;   
     }
     
     .main-nav {display:none;}
@@ -177,8 +185,18 @@
         left: 50%;
     }
     
-    .gallery-showcase li{ 
-        width: 43%;
+    .my-photo {
+        margin-left: 25%;
+        width: 180px;
+        margin-bottom: 5px;
+    }
+    
+    .long-copy{
+        width: 90%;
         margin-left: 5%;
+        text-align:justify; 
+    }
+    .gallery-showcase li{ 
+        width: 50%;  
     }  
 }

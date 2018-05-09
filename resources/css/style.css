@@ -24,6 +24,7 @@ body {
     font-size: 20px;
     font-weight: 300;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden;
 }
 
 .clearfix {zoom: 1}
@@ -48,34 +49,6 @@ section{
     padding: 80px 0; 
 }
 
-.box {
-    padding: 1%;
-}
-
-/*----------------------------------------------------------- */
-/*HEADER*/
-/*----------------------------------------------------------- */
-
-header{
-    background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.6)),to(rgba(0, 0, 0, 0.6))),url(img/hero.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url(img/hero.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 100vh;   
-}
-
-.hero-text-box {
-    position: absolute;
-    width: 1140px;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%); 
-}
-
-.hero-text-box a {
-    margin-left: 50px;
-}
 
 /*-----------HEADINGS----------*/
 h1,
@@ -141,11 +114,6 @@ h3{
     text-align:justify; 
 }
 
-.box p{
-    font-size: 90%;
-    line-height: 145%;
-}
-
 blockquote{
     font-style: italic;
     margin-left: 15%;
@@ -167,23 +135,30 @@ blockquote{
     color: #555;
 }
 
-/*----------BUTTON----------*/
+/*----------------------------------------------------------- */
+/*HEADER*/
+/*----------------------------------------------------------- */
 
-.btn:link,
-.btn:visited {
-    display: inline-block;
-    padding: 10px 30px;
-    font-weight: 300;
-    text-decoration: none;
-    border-radius: 200px;
-    margin-top: 30px;
-    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
-    transition: background-color 0.2s, border 0.2s, color 0.2s;
+header{
+    background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.6)),to(rgba(0, 0, 0, 0.6))),url(img/hero.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url(img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
 }
 
-.btn:hover,
-.btn:active {
-    background-color:#cf6d17;    
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%); 
+}
+
+.hero-text-box a {
+    margin-left: 50px;
 }
 
 .logo {
@@ -204,16 +179,19 @@ blockquote{
 }
 
 /-------------- *MAIN-NAV* -------------/
+nav {float: right;}
+
 .main-nav {
+    float: right;
     list-style: none;
-    margin-top: 55px;
+    margin-top: 10px;
 }
 
-.main-nav li {
-    display:inline-block;
-    float: right;
+.main-nav li{
+    display: inline-block;
+    /*float: right;*/
     margin-left: 40px;
-    margin-top: 25px;
+    margin-top: 20px;
 }
 
 .main-nav li a:link,
@@ -231,6 +209,19 @@ blockquote{
 .main-nav li a:hover,
 .main-nav li a:active{
     border-bottom: 2px solid #e67e22;
+}
+
+/*-----------MOBILE NAV-------------*/
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: white;
 }
 
 /*-----------STICKY-NAV-------------*/
@@ -255,21 +246,7 @@ blockquote{
 .sticky .logo{display: none;}
 .sticky .logo-black{display: block;}
 
-/*-----------MOBILE NAV-------------*/
-.mobile-nav-icon {
-    float: right;
-    margin-top: 30px;
-    cursor: pointer;
-    display: none;
-}
-
-.mobile-nav-icon i{
-    font-size: 200%;
-    color: white;
-}
-
 /*-----------ICONS-------------*/
-
 .icon-small{
     display: inline-block;
     width: 30px;
@@ -620,6 +597,26 @@ body {
 
 .certificate {
     padding-top: 18px
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 17%; /* Place the button at the bottom of the page */
+    right: 40px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #e67e22; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 8px; /* Some padding */
+    border-radius: 20%; /* Rounded corners */
+    font-size: 45%; /* Increase font size */
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
 }
 
 /*------------------------------*/
