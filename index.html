@@ -25,7 +25,7 @@
         <meta name="msapplication-config" content="/resources/favicon/browserconfig.xml">
         <meta name="theme-color" content="#ffffff">
         
-    
+        
     </head>
     <body> 
         <header>
@@ -33,19 +33,13 @@
                 <div class="row">
                     <img src ="resources/img/logo.jpg" alt="Omnifood logo" class="logo">
                     <img src ="resources/img/logo-black.jpg" alt="Omnifood logo" class="logo-black">
+                    
                     <ul class="main-nav js--main-nav">
-                        <!--
-                        <li><a href="#other">Other</a></li>
-                        <li><a href="#timelines">Experience</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#gallery">Gallery</a></li>
                         <li><a href="#features">About me</a></li>
-                        -->
-                        <li><a href="#features">About me</a></li>
-                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#gallery">Portfolio Gallery</a></li>
                         <li><a href="#skills">Skills</a></li>
                         <li><a href="#timelines">Experience</a></li>
-                        <li><a href="#other">Other</a></li> 
+                        <li><a href="#other">Resources</a></li> 
                     </ul>
                     <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
                 </div>
@@ -59,13 +53,13 @@
         <section class="section-features js--section-features" id="features">
             <div class="row js--wp-1">
                 <h2>About me</h2>
-                <img src ="resources/img/profile.jpg" alt='my photo' class="my-photo">
+                <img src ="resources/img/profile.jpg" alt="my photo" class="my-photo">
                 <p class="long-copy">
                     Hello, this is Huipu. I come from Luoyang that is located in North of China. I have been living in Corvallis for 3 years. During this period, I earned my Master's degree in Computer Science (also Minor in Business &amp; Entrepreneurship) from Oregon State University in 2017.<br>
                     <br>
-                    I have always been an achiever not only in my professional area but also in my other life fields. As a self-motivated learner, I'd love to learn new things in my spare time by myself. I can work alone efficiently and also work well on a team. Currently, I'm learning web development and adding some cool things on my personal website by using HTML5, CSS3 &amp; jQuery.<br>
+                    I have always been an achiever not only in my professional area but also in my other life fields. As a self-motivated learner, I'd love to learn new things in my spare time by myself. I can work alone efficiently and also work well on a team. Currently, I'm learning web development and adding some cool things on my personal website by using HTML5, CSS3 &amp; JavaScript.<br>
                     <br>
-                    Except for professional work, my life was full filled with sports, traveling and collections. I go in for hiking, snowboarding &amp; photographing. Moreover, I am a Marvel fan,in particular, Team Iron-man and Iron-man collector.
+                    Except for professional work, my life was full filled with sports, traveling and collections. I go in for hiking, snowboarding &amp; photographing. Moreover, I am a Marvel fan, in particular, Iron-man collector.
                 </p>
                 <p class="long-copy">
                     My motto in life is to,
@@ -75,104 +69,165 @@
         </section>
         
         <section class="section-gallery js--section-gallery js--wp-3" id="gallery">
-            <h2>Gallery</h2>
-            <ul class="gallery-showcase clearfix">
-                <li>
-                    <figure class="gallery-photo">
-                        <img src="resources/img/1.jpg" alt="Korean bibimbap with egg and vegetables">  
-                    </figure>
-                </li>
-                <li>
-                    <figure class="gallery-photo">
-                        <img src="resources/img/2.jpg" alt="Simple italian pizza with cherry tomatoes">  
-                    </figure>
-                </li>
-                <li>
-                    <figure class="gallery-photo">
-                        <img src="resources/img/3.jpg" alt="Chicken breast steak with vegetables">  
-                    </figure>
-                </li>
-                <li>
-                    <figure class="gallery-photo">
-                        <img src="resources/img/4.jpg" alt="Autumn pumpkin soup">
-                    </figure>
-                </li>
-            </ul>
-        </section>
+            <div>
+                 <h2>Portfolio Gallery</</h2>
+            </div>
+                
+            <div class="gallery-showcase clearfix">
+                <ul>
+                    <li>
+                        <figure class="gallery-photo">
+                            <img src="resources/img/1.png" alt="Pig Game" onclick="myFunction(this);">  
+                        </figure>
+                        <p><a href="pig_game.html" target="_blank">Pig Game</a></p>
+                    </li>
 
+                    <li>
+                        <figure class="gallery-photo">
+                            <img src="resources/img/2.png" alt="Budget Application" onclick="myFunction(this);">  
+                        </figure>
+                        <p><a href="budget.html" target="_blank">Budget Application</a></p>
+                    </li>
+
+                    <li>
+                        <figure class="gallery-photo">
+                            <img src="resources/img/3.png" alt="Full Stack Dev Resourses" onclick="myFunction(this);">  
+                        </figure>
+                        <p><a href="catalog.html" target="_blank">Full Stack Resourses</a></p>
+                    </li>
+
+                    <li>
+                        <figure class="gallery-photo">
+                            <img src="resources/img/4.png" alt="Tic_Tac_Toe Game" onclick="myFunction(this);">
+                        </figure>
+                        <p><a href="https://github.com/HooeyPooey/Tic_Tac_Toe" target="_blank">Tic_Tac_Toe Game</a></p>
+                    </li>
+                </ul>
+                
+                <!-- The expanding image container -->
+                <div class="img-container">
+                  <!-- Close the image -->
+                  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+                  <!-- Expanded image -->
+                  <img id="expandedImg" style="width:100%">
+
+                  <!-- Image text -->
+                  <div id="imgtext"></div>
+                </div>
+            </div>
+                
+
+        </section>
+        
         <section class="section-skills js--section-skills" id="skills">
-            <div class="row"> 
+            <div class="row">
                 <h2>Skills</h2>
                 <div>
-                    <div class="row">
-                        <div class="col span-1-of-5">
-                            <div class="skills-box js--wp-4">
-                                <div>
-                                    <h3>Front-End</h3>
-                                </div>
-                                <div>
-                                    <ul>
-                                        <li><i class="ion-ios-star icon-small"></i>HTML5</li>
-                                        <li><i class="ion-ios-star icon-small"></i>CSS3</li>
-                                        <li><i class="ion-ios-star icon-small"></i>jQuery</li>
-                                        <li><i class="ion-ios-star icon-small"></i>js</li>
-                                    </ul>
-                                </div>
-                                
+                    <button class="tablink" onclick="openPage('Front-End', this, '#777')" id="defaultOpen">Front-End</button>
+                    <button class="tablink" onclick="openPage('Back-End', this, '#777')">Back-End</button>
+                    <button class="tablink" onclick="openPage('Tool', this, '#777')">Tool</button>
+                    <button class="tablink" onclick="openPage('Other', this, '#777')">Other</button>
+
+                    <div id="Front-End" class="tabcontent">
+                      <h3>Front-End</h3>
+                        <div>
+                            <p>HTML5</p>
+                            <div class="bar-container">
+                              <div class="bar-skills html">80%</div>
+                            </div>
+                            <p>CSS3</p>    
+                            <div class="bar-container">
+                              <div class="bar-skills css">75%</div>
+                            </div>
+                            <p>JavaScript</p>
+                            <div class="bar-container">
+                              <div class="bar-skills javascript">70%</div>
+                            </div>
+                            <p>Node JS</p>
+                            <div class="bar-container">
+                              <div class="bar-skills node-js">30%</div>
                             </div>
                         </div>
-                        <div class="col span-1-of-5">
-                            <div class="skills-box js--wp-4">
-                                <div>
-                                    <h3>Back-End</h3>
-                                </div>
-                                <div>
-                                    <ul>
-                                        <li><i class="ion-ios-star icon-small"></i>Python</li>
-                                        <li><i class="ion-ios-star icon-small"></i>C</li>
-                                        <li><i class="ion-ios-star icon-small"></i>OpenGl</li>
-                                        <li><i class="ion-ios-star icon-small"></i>Haskell</li>
-                                    </ul>
-                                </div>
+                    </div>
+
+                    <div id="Back-End" class="tabcontent">
+                      <h3>Back-End</h3>                               
+                        <div>
+                            <p>Python</p>
+                            <div class="bar-container">
+                              <div class="bar-skills python">75%</div>
+                            </div>
+                            <p>C</p>
+                            <div class="bar-container">
+                              <div class="bar-skills c">65%</div>
+                            </div>
+                            <p>OpenGL</p>
+                            <div class="bar-container">
+                              <div class="bar-skills opengl">50%</div>
+                            </div>
+                            <p>R</p>
+                            <div class="bar-container">
+                              <div class="bar-skills r">40%</div>
+                            </div>
+                            <p>Haskell</p>
+                            <div class="bar-container">
+                              <div class="bar-skills haskell">40%</div>
                             </div>
                         </div>
-                        
-                        <div class="col span-1-of-5">
-                            <div class="skills-box js--wp-4">
-                                <div>
-                                    <h3>Tools</h3>
-                                </div>
-                                <div class="row-3">
-                                    <ul>
-                                        <li><i class="ion-ios-star icon-small"></i>Vim/Emacs</li>
-                                        <li><i class="ion-ios-star icon-small"></i>Brackets</li>
-                                        <li><i class="ion-ios-star icon-small"></i>Jupyter Notebook</li>
-                                        <li><i class="ion-ios-star icon-small"></i>Git</li>
-                                    </ul>
-                                </div>
+                    </div>
+
+                    <div id="Tool" class="tabcontent">
+                      <h3>Tool</h3>
+                         <div>
+                            <p>Brackets</p>
+                            <div class="bar-container">
+                              <div class="bar-skills brackets">85%</div>
+                            </div>
+                            <p>Jupyther Notebook</p>
+                            <div class="bar-container">
+                              <div class="bar-skills jupyter">80%</div>
+                            </div>
+                            <p>Emacs/Vim</p>
+                            <div class="bar-container">
+                              <div class="bar-skills emacs">70%</div>
+                            </div>
+                            <p>Git</p>
+                            <div class="bar-container">
+                              <div class="bar-skills git">65%</div>
                             </div>
                         </div>
-                        
-                        <div class="col span-2-of-5">
-                            <div class="skills-box js--wp-4">
-                                <div>
-                                    <h3>Other</h3>
-                                </div>
-                                <div>
-                                    <ul>
-                                        <li><i class="ion-ios-star icon-small"></i>Languages: Mandarin/English</li>
-                                        <li><i class="ion-ios-star icon-small"></i>Systems: Windows/Linux/CentOS</li>
-                                        <li><i class="ion-ios-star icon-small"></i>Programming Languages:R/Tex/Idris</li>
-                                        <li><i class="ion-ios-star icon-small"></i>Shell: Bash</li>
-                                    </ul>
-                                </div>
+                    </div>
+
+                    <div id="Other" class="tabcontent">
+                      <h3>Other</h3>
+                        <div>
+                            <p>Chinese (Native Speaker)</p>
+                            <div class="bar-container">
+                              <div class="bar-skills chinese">100%</div>
+                            </div>
+                            <p>English (Work Proficiency)</p>
+                            <div class="bar-container">
+                              <div class="bar-skills english">70%</div>
+                            </div>
+                            <p>Team Work / Communication</p>
+                            <div class="bar-container">
+                              <div class="bar-skills communication">70%</div>
+                            </div>
+                            <p>Linux/shell</p>
+                            <div class="bar-container">
+                              <div class="bar-skills linux">65%</div>
+                            </div>
+                            <p>Tex/LaTex</p>
+                            <div class="bar-container">
+                              <div class="bar-skills latex">55%</div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-              
+
         <section class="section-timelines js--section-timelines" id="timelines">
             <div class="row">
                 <h2>Education Experience</h2>
@@ -220,92 +275,40 @@
               
             </div>
         </section>
+
         
         <section class="section-other js--section-other" id="other">
             <div class="row">
-                <h2>Other Resources</h2>
+                <h2>Resources</h2>
             </div>
-            <div class="row-2">
-                <div class="col span-1-of-2 js--wp-2">
-                    <div class="row-1">
-                        <h3><i class="ion-ios-cloud-download icon-small"></i>Download</h3>
-                        <p>You're welcome to download my resume! <a href="resources/document/resume.pdf" download="Huipu Xu's Resume">Click Here</a></p>   
-                </div>
-                </div>
-                <div class="col span-1-of-2">
+            <div class="row-1">
+                <div class="col span-1-of-3">
                     <div class="certificate" >
                         <h3><i class="ion-university icon-small"></i>Certificates</h3>
-                        <ul class="remove-lines">  
-                            <li><a href="https://www.udemy.com/certificate/UC-4UZG0XZ5/" target="_blank">Build Responsive Real World Websites with HTML5 and CSS3</a></li>
-                            <li><a href="https://www.udemy.com/certificate/UC-GZ3T0LPQ/" target="_blank">Complete Python Bootcamp: Go from zero to hero in Python 3</a></li>
-                        </ul>
+                        <div class="popup" onclick="myFunction()">
+                            <p><a>Clike Here</a></p>
+                            <span class="popuptext" id="myPopup">
+                                <ul class="remove-lines">  
+                                    <li><a href="https://www.udemy.com/certificate/UC-4UZG0XZ5/" target="_blank">Build Responsive Real World Websites with HTML5 and CSS3</a></li>
+                                    <li><a href="https://www.udemy.com/certificate/UC-GZ3T0LPQ/" target="_blank">Complete Python Bootcamp: Go from zero to hero in Python 3</a></li>
+                                </ul>
+                            </span>
+                        </div>
+
                     </div>
                 </div>
-                
-                <div class="material">
-                    <h3><i class="ion-ios-bookmarks icon-small"></i>Useful Links</h3>
-                    <div class="col span-1-of-4">
-                        <div class="sub-material">
-                            <div>
-                                <h5>Web Design</h5>
-                            </div>
-                            <div>
-                                <ul>
-                                    <li><a href="https://codepen.io/" target="_blank">Codepen</a></li>
-                                    <li><a href="https://daneden.github.io/animate.css/" target="_blank">Animate</a></li>
-                                    <li><a href="https://www.w3schools.com/" target="_blank">w3schools.com</a></li>
-                                    <li><a href="https://developer.mozilla.org/en-US/" target="_blank">MDN Web Doc</a></li>
-                                    <li><a href="http://www.responsivegridsystem.com/" target="_blank">Responsive Grid System</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col span-1-of-4">
-                        <div class="sub-material">
-                            <div>
-                                <h5>Programming Language</h5>
-                            </div>
-                            <div>
-                                <ul>
-                                    <li><a href="https://docs.python.org/3/tutorial/" target="_blank">Python Tutorial</a></li>
-                                    <li><a href="http://ogldev.atspace.co.uk/index.html" target="_blank">Modern OpenGl Tutorial</a></li>
-                                    <li><a href="http://web.engr.oregonstate.edu/~mjb/cs519/" target="_blank">Computer Graphics Shaders</a></li>
-                                    <li><a href="http://learnyouahaskell.com/chapters" target="_blank">Learn You a Haskell for Great Good!</a></li>
-                                    <li><a href="http://web.engr.oregonstate.edu/~mjb/cs550/" target="_blank">Introduction to Computer Graphics</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col span-1-of-4">
-                        <div class="sub-material">
-                            <div>
-                                <h5>Tools</h5>
-                            </div>
-                            <div>
-                                <ul>
-                                    <li><a href="https://www.cs.pu.edu.tw/~wckuo/doc/latex123/latex123.html" target="_blank">LaTex Tutorial</a></li>
-                                    <li><a href="https://vim.rtorr.com/" target="_blank">Vim Cheat Sheet</a></li>
-                                    <li><a href="https://legacy.gitbook.com/book/siddontang/leetcode-solution/details" target="_blank">LeetCode Problems</a></li>
-                                    <li><a href="https://www.dataquest.io/blog/jupyter-notebook-tutorial/" target="_blank">Jupyter Notebook for Beginners</a></li>
-                                    <li><a href="http://www2.lib.uchicago.edu/keith/tcl-course/emacs-tutorial.html" target="_blank">A Tutorial Introduction to GNU Emacs</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col span-1-of-5">
-                        <div class="sub-material">
-                            <div>
-                                <h5>Online Class</h5>
-                            </div>
-                            <div>
-                                <ul>
-                                    <li><a href="https://www.udemy.com/design-and-develop-a-killer-website-with-html5-and-css3/" target="_blank">Build Responsive Real World Websites with HTML5 and CSS3</a></li>
-                                    <li><a href="hhttps://www.udemy.com/complete-python-bootcamp/" target="_blank">Complete Python Bootcamp: Go from zero to hero in Python 3</a></li>
-                                </ul>
-                            </div>
-                        </div>
+                <div class="col span-1-of-3 js--wp-2">
+                    <div class="download">
+                        <h3><i class="ion-ios-cloud-download icon-small"></i>Download</h3>
+                        <p>You're welcome to download my resume! <a href="resources/document/resume.pdf" download="Huipu Xu's Resume">Click Here</a></p> 
                     </div>
                 </div>
+                <div class="col span-1-of-3">
+                    <div class="full-stack" >
+                        <h3><i class="ion-university icon-small"></i>Full Stack Resources</h3>
+                        <p><a href="catalog.html" target="_blank">Click here</a></p>
+                    </div>
+                </div> 
                 <button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
             </div>
         </section>
@@ -318,7 +321,7 @@
                         <li><a href="mailto:xhpzzu@gmail.com">Contact me</a></li>
                     </ul>
                 </div>
-                <div class="col span-1-of-2">
+                <div class="col span-1-of-2 ">
                     <ul class="footer-icons">
                         <li><a href="mailto:xhpzzu@gmail.com"><i class="ion-ios-email"></i></a></li>
                         <li><a href="https://www.linkedin.com/in/huipu-xu"><i class="ion-social-linkedin"></i></a></li>
@@ -327,7 +330,7 @@
                 </div>
                 <div class="row">
                     <p>
-                        Copyright &copy;2018 by Huipu Xu with Jonas Schmedtmann (Udemy Web Instructor). All right reserved.
+                        Copyright &copy;2018 by Huipu Xu. All right reserved.
                     </p>
                 </div>
             </div>

@@ -273,33 +273,41 @@ nav {float: right;}
 /*------------------------------*/
 
 .section-gallery{
-    padding: 0;  
+    padding: 0; 
 }
 
 .gallery-showcase {
     list-style: none;
     width: 100%;
+    margin-left: 11%
 }
 
 .gallery-showcase li{
     display: block;
     float: left;
-    width: 25%;
+    width: 33%;
+    margin: 2%;
+}
+
+.gallery-showcase p{
+    font-size: 80%;
+    margin: 2%;
+    padding-left: 35%;
 }
 
 .gallery-photo{
     width:100%;
     margin: 0;
     overflow:hidden;
-    background-color: black;
+    background-color: #ccc;
 }
 
 .gallery-photo img{
     opacity: 0.7;
     width:100%;
     height:auto;
-    -webkit-transform: scale(1.15);
-    transform: scale(1.15);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
     -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
     transition: opacity 0.5s, -webkit-transform 0.5s;
     transition: transform 0.5s, opacity 0.5s;
@@ -312,49 +320,122 @@ nav {float: right;}
     opacity: 1; 
 }
 
-/*------------------------------*/
-/*Skills*/
-/*------------------------------*/
+/*--------Expand Img--------*/
 
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.img-container{
+    position:fixed;
+    display: none;
+    width: 80%;
+    height:70%;
+    top: 0;
+    left: 10%;
+    z-index: 1;
+    overflow:auto;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Expanding image text */
+#imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+}
+
+/* Closable button inside the image */
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #ccc;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+
+/*------------------------------*/
+/*Skills New Section*/
+/*------------------------------*/
+/* Set height of body and the document to 100% to enable "full page tabs" */
 .section-skills {
     background-color: #eaeaea;
 }
 
-.skills-box {
-    background-color: white;
-    border-radius: 5px;
-    width: 90%;
-    margin-left: 5%;
-    -webkit-box-shadow: 0 2px 2px #aaaaaa;
-    box-shadow: 0 2px 2px #aaaaaa;
-    font-size: 85%;
+/* Style tab links */
+.tablink {
+  background-color: #ddd;
+  color: #000;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
 }
 
-.skills-box div {
-    padding: 10px;
-    border-bottom: 2px solid #f8f8f8;
+.tablink:hover {
+  background-color: #fff;
 }
 
-.skills-box div:first-child{
-    background-color: #f8f8f8;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: #000;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
 }
 
-.skills-box div:last-child {
-    text-align: center;
-    border: 0;
+#Front-End {background-color: #fff;}
+#Back-End {background-color: #fff;}
+#Tool {background-color: #fff;}
+#Other {background-color: #fff;}
+
+
+/*------------------------------*/
+/*Skill bar*/
+/*------------------------------*/
+
+/* bar for skill bars */
+.bar-container {
+    width: 100%; /* Full width */
+    background-color: #ddd; /* Grey background */
+    border-radius: 10px;
 }
 
-.skills-box ul {
-    list-style:none;
-    text-align: left;
+.bar-skills {
+    text-align: right; /* Right-align text */
+    padding-right: 30px; /* Add some right padding */
+    line-height: 20px; /* Set the line-height to center the text inside the skill bar, and to expand the height of the container */
+    color: white; /* White text color */
+    margin-bottom: 20px;
+    border-radius: 10px;
 }
 
-.skills-box ul li {
-    padding: 5px 0;
-}
+.html {width: 80%; background-color: #e67e22;}
+.css {width: 75%; background-color: #e67e22;} 
+.javascript {width: 70%; background-color: #e67e22;} 
+.node-js {width: 30%; background-color: #e67e22;}
 
+.python {width: 75%; background-color: #e67e22;}
+.c {width: 65%; background-color: #e67e22;} 
+.opengl {width: 50%; background-color: #e67e22;} 
+.r {width: 40%; background-color: #e67e22;} 
+.haskell {width: 40%; background-color: #e67e22;}
+
+.brackets {width: 85%; background-color: #e67e22;}
+.jupyter {width: 80%; background-color: #e67e22;} 
+.emacs {width: 70%; background-color: #e67e22;} 
+.git {width: 65%; background-color: #e67e22;} 
+
+.chinese {width: 100%; background-color: #e67e22;}
+.english {width: 70%; background-color: #e67e22;} 
+.communication {width: 70%; background-color: #e67e22;} 
+.linux {width: 60%; background-color: #e67e22;} 
+.latex {width: 55%; background-color: #e67e22;} 
 
 /*------------------------------*/
 /*ANIMATIONS*/
@@ -528,76 +609,96 @@ body {
 }
 
 /*------------------------------*/
-/*OTHER*/
+/*Resources*/
 /*------------------------------*/
 
-/*-------Download----------*/
 .section-other {
     display: block;
-    background-color: #eaeaea;
+    background-color:#eaeaea;
+    height: 500px;
 }
 
-/*-------Certificates----------*/
-.row-1 {
-    margin-top: 2%;
+/*-------Download----------*/
+
+
+
+/*-------certificate--------*/
+
+.popup p {
+    display: inline-block;
+    padding-left: 210px;
+    color: #e67e22;
 }
 
-.row-2 {
-    display: block;
+.popup ul li{
+    padding: 1%
+}
+
+/* Popup container - can be anything you want */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+    visibility: hidden;
+    width: 660px;
+    height: 80px;
+    background-color: #ccc;
+    color: #fff;
     text-align: center;
-    margin: 2%;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    top: 200%;
+    left: 40%;
+    margin-left: -40px;
 }
 
-.row-1 a{
-    font-size: 80%;
-    font-weight: 300;
-    margin-left: 5px;
-    margin-bottom: 15px;
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 26%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
 }
 
-.row-1 h3,
-.row-2 h3,
-.material h3{
-    font-size: 100%;
-    font-weight: 200;
-    margin-bottom: 20px;
+/* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
 }
 
-.row-1 p,
-.row-2 ul li,
-.material div ul li{
-    list-style: none;
-    margin-top: 15px;
-    font-size: 70%;
-    font-weight: 100;
-    text-align:center;
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
 }
 
-.material div ul li{text-align: left;}
-
-.material {
-    display:inline-block;
-    width: 90%;
-    margin: 2%;
-    text-align:center;
-    padding-top: 25px;
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
 }
 
-.sub-material {
-    margin-left: 25%;
+/*-------Full Stack---------*/
+.full-stack p{
+    display: inline-block;
+    position: absolute;
+    padding-left: 200px;
 }
 
-.sub-material h5 {
-    text-align: center;
-    font-size: 70%;
-    font-weight: 100;
-    padding-bottom: 5%;
-    border-bottom: 1px solid #555;
-}
-
-.certificate {
-    padding-top: 18px
-}
 
 #myBtn {
     display: none; /* Hidden by default */
@@ -613,6 +714,8 @@ body {
     padding: 8px; /* Some padding */
     border-radius: 20%; /* Rounded corners */
     font-size: 45%; /* Increase font size */
+    opacity: 0.7;
+    filter: alpha(opacity=100);
 }
 
 #myBtn:hover {

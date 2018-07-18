@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+        <link type="text/css" rel="stylesheet" href = "resources/css/style_pig.css">
+        
+        <title>Pig Game</title>
+    </head>
+
+    <body link = "white">
+        <div class="game-name" >
+            <h2><a href ="https://www.wikiwand.com/en/Pig_(dice_game)" target="_blank">Pig Game</a></h2>
+        </div>
+        
+        <div class="wrapper clearfix">
+            <div class="player-0-panel active">
+                <div class="player-name" id="name-0">Player 1</div>
+                <div class="player-score" id="score-0">0</div>
+                <div class="player-current-box">
+                    <div class="player-current-label">Current</div>
+                    <div class="player-current-score" id="current-0">0</div>
+                </div>
+            </div>
+            
+            <div class="player-1-panel">
+                <div class="player-name" id="name-1">Player 2</div>
+                <div class="player-score" id="score-1">0</div>
+                <div class="player-current-box">
+                    <div class="player-current-label">Current</div>
+                    <div class="player-current-score" id="current-1">0</div>
+                </div>
+            </div>
+            
+            <button class="btn-new"><i class="ion-ios-plus-outline"></i>New game</button>
+            <button class="btn-roll"><i class="ion-ios-loop"></i>Roll dice</button>
+            <button class="btn-hold"><i class="ion-ios-download-outline"></i>Hold</button>
+            
+            <img src="resources/img/dice-2.png" alt="Dice" class="dice">
+        </div>
+        
+        
+        <!-- Trigger/Open The Modal -->
+        <button class="rules-header" id="myBtn">Game Rules</button>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>                
+              <div class="rules-list" >
+                    <ul>
+                        <li>The game has 2 players, playing in rounds;</li>
+                        <li>In each turn, a player rolls a dice as many times as he whishes. Each result get added to his ROUND score;</li>
+                        <li>if the player rolls a 1, all his ROUND score gets lost. After that, it's the next player's turn;</li>
+                        <li>The player can choose to 'Hold', which means that his ROUND score gets added to his GLBAL score. After that, it's the next player's turn;</li>
+                        <li>The first player to reach 100 points on GLOBAL score wins the game.</li>                
+                    </ul>
+                </div>
+            </p>
+          </div>
+        </div>
+    
+        <!--
+        <div class="popup" onclick="myFunction()">Click me!
+            <span class="popuptext" id="myPopup">Popup text...</span>
+        </div>
+        -->
+        <script src ="resources/js/app_pig.js"></script>
+        
+    </body>
+    
+</html>
