@@ -1,8 +1,4 @@
-/*
-Copyright
-orange color: #e67e22
-background color:#cf6d17
-*/
+/*All right reservied by Huipu Xu*/
 
 /* ---------------------------------------------------------- */
 /*BASIC SETUP*/
@@ -371,7 +367,7 @@ header {
 
 .mobile-nav-icon i {
     font-size: 200%;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 /*-----------STICKY-NAV-------------*/
@@ -876,7 +872,7 @@ footer {
     font-size: 80%;
     position: relative;
     bottom: -60px;
-    padding:0 2%;
+    padding: 0 2%;
 }
 
 footer p {

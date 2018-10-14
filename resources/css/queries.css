@@ -1,3 +1,5 @@
+/*All right reservied by Huipu Xu*/
+
 /*for big tablets to 1200px(width smaller than the 1140px row)  */
 @media only screen and (max-width:1200px) {
     .hero-text-box {
@@ -5,85 +7,103 @@
         width: 100%;
         padding: 0 2%;
     }
-    .row {padding: 0 2%;}
+
+    .row {
+        padding: 0 2%;
+    }
 }
 
 /*for small tablets to big tablets: from 768px - 1023px */
 @media only screen and (max-width:1023px) {
-    body {font-size: 18px;}
-    section {padding: 40px 0;}
-    header {height:80vh;}
-    
-   /*----about me----*/
+    body {
+        font-size: 18px;
+    }
+
+    section {
+        padding: 40px 0;
+    }
+
+    header {
+        height: 80vh;
+    }
+
+    /*----about me----*/
     .flip-card-front,
     .card-color,
     .card-cover,
     .flip-card-inner,
-    .flip-card{
+    .flip-card {
         right: 5%;
     }
-    
-    .card-cover{
+
+    .card-cover {
         position: absolute;
     }
-    
-    .flip-card-back{
-        right:9%;
+
+    .flip-card-back {
+        right: 9%;
     }
-    
-    .long-copy{
+
+    .long-copy {
         line-height: 110%;
         text-align: justify;
     }
-    
-    blockquote{
+
+    blockquote {
         margin-left: 10%;
         font-size: 110%;
     }
-    
+
     /*----skills----*/
-    
+
     .row h3 {
         word-spacing: 100px;
         text-align: center;
         font-size: 80%;
     }
-    
+
     /*----education----*/
-    .content ul{
+    .content ul {
         list-style: none;
         text-align: left;
         font-size: 60%;
         margin-left: 5%;
     }
-    
-    .content h3 {font-size: 90%}
-    .content ul li{width: 110%;}
+
+    .content h3 {
+        font-size: 90%
+    }
+
+    .content ul li {
+        width: 110%;
+    }
 }
 
 /*for small tablets: from 500px - 767px */
 @media only screen and (max-width:767px) {
-    body {font-size: 16px;}
-    
-/*header*/     
+    body {
+        font-size: 16px;
+    }
+
+    /*header*/
     header {
         background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.8))), url(img/hero-mobile.jpg);
         background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url(img/hero-mobile.jpg);
         background-size: cover;
         height: 70vh;
     }
-    
+
     .logo,
-    .logo-black{
+    .logo-black {
         height: 30px;
         margin-top: 10px;
     }
-    
+
     .main-nav {
         font-size: 90%;
         margin: 0;
     }
-    
+
     .main-nav li {
         display: inline-block;
         margin-left: 20px;
@@ -94,8 +114,8 @@
         font-size: 300%;
         padding-bottom: 150px;
     }
-    
-/*about me*/    
+
+    /*about me*/
     .html5 {
         height: 25%;
         width: 25%;
@@ -103,8 +123,9 @@
 
     .css3 {
         height: 20%;
-        width: 20%;    
+        width: 20%;
     }
+
     .js {
         height: 20%;
         width: 20%;
@@ -119,33 +140,36 @@
     .jquery {
         padding-top: 10px;
     }
-    
+
     .flip-card-back {
         height: 160%;
         margin-right: 1%;
         font-size: 80%;
     }
-    
-    .flip-card-back div h1 {margin-top: 20%;}
-    
-    .flip-card-inner{
+
+    .flip-card-back div h1 {
+        margin-top: 20%;
+    }
+
+    .flip-card-inner {
         width: 80%;
-        height:50%;
+        height: 50%;
     }
 
     .card-cover,
-    .card-color{
+    .card-color {
         width: 100%;
         height: 80%;
     }
+
     .card-color {
         top: 80%;
     }
-    
+
     .social-icons {
         left: 10%;
     }
-    
+
     .my-photo {
         height: 50%;
         width: 40%;
@@ -153,25 +177,30 @@
         bottom: 75%;
         left: 30%;
     }
-     
-    h1 {font-size: 180%;}
-    h2 {font-size: 150%;}
-    
+
+    h1 {
+        font-size: 180%;
+    }
+
+    h2 {
+        font-size: 150%;
+    }
+
     .long-copy {
         width: 90%;
         font-size: 90%;
-    } 
-    
+    }
+
     .gallery-showcase {
         list-style: none;
         width: 110%;
     }
-    
+
     .section-skills {
         background-color: #eaeaea;
         width: 100%;
     }
-    
+
     .skills-box {
         background-color: white;
         border-radius: 5px;
@@ -181,7 +210,7 @@
         box-shadow: 0 2px 2px #aaaaaa;
         font-size: 90%;
     }
-    
+
     .content ul,
     .skills-box ul {
         list-style: none;
@@ -189,31 +218,36 @@
         text-align: left;
         margin-left: 5%;
     }
-    
-    .content h3{
+
+    .content h3 {
         font-size: 80%;
         margin-bottom: 15px;
         text-align: center;
     }
+
     .university-logo {
         height: 70px;
-        margin-left:30%; 
+        margin-left: 30%;
         margin-bottom: 10px;
     }
-    
+
     #myBtn {
-        bottom: 5%; /* Place the button at the bottom of the page */
-        right: 1%; /* Place the button 30px from the right */
+        bottom: 5%;
+        /* Place the button at the bottom of the page */
+        right: 1%;
+        /* Place the button 30px from the right */
     }
-    
+
     .row,
-    .hero-text-box {padding: 0 3%;}
-    
+    .hero-text-box {
+        padding: 0 3%;
+    }
+
     .row {
         width: 100%;
         margin: 0;
     }
-    
+
     footer {
         padding: 10px;
         font-size: 70%;
@@ -224,59 +258,66 @@
 /*for small phone: from 0 - 499px */
 
 @media only screen and (max-width:499px) {
-    section {padding: 25px 0;}
-    header{
-        height: 60vh;   
+    section {
+        padding: 25px 0;
     }
-    
-    
+
+    header {
+        height: 60vh;
+    }
+
+
     .logo,
-    .logo-black{
+    .logo-black {
         height: 30px;
         margin-top: 25px;
     }
-    
-    .main-nav {display:none;}
-    
-    .mobile-nav-icon {
-        display:block;
+
+    .main-nav {
+        display: none;
     }
-    
+
+    .mobile-nav-icon {
+        display: block;
+    }
+
     .main-nav li {
         margin: 10 0 0 10px;
         display: block;
-        
+
     }
-    
-    .sticky .main-nav {margin-top: 0;}
+
+    .sticky .main-nav {
+        margin-top: 0;
+    }
+
     .sticky .main-nav li a:link,
-    .sticky .main-nav li a:visited{
+    .sticky .main-nav li a:visited {
         color: #555;
     }
-    
+
     .hero-text-box {
         top: 45%;
         left: 50%;
     }
-    
+
     .flip-card {
-        margin-left: 20%;       
+        margin-left: 20%;
     }
-    
+
     .flip-card-front {
         left: 10%;
     }
-    
-    .flip-card-back
-    {
+
+    .flip-card-back {
         left: 5%;
     }
-    
+
     .my-photo {
         width: 40%;
         height: 50%;
     }
-    
+
     .html5 {
         height: 10%;
         width: 10%;
@@ -284,8 +325,9 @@
 
     .css3 {
         height: 15%;
-        width: 15%;    
+        width: 15%;
     }
+
     .js {
         height: 8%;
         width: 8%;
@@ -296,55 +338,61 @@
         width: 10%;
     }
 
-    .flip-card-back div h1 {margin-top: 10%;}
-    
-    .long-copy{
+    .flip-card-back div h1 {
+        margin-top: 10%;
+    }
+
+    .long-copy {
         width: 80%;
         padding-top: 0;
         margin-top: 0;
     }
-    
-    .gallery-showcase li{ 
+
+    .gallery-showcase li {
         width: 50%;
         margin-left: 10%;
         font-size: 100%;
     }
-    
+
     .tablink {
         padding: 3%;
         font-size: 80%;
         width: 25%;
     }
-    
+
     .tabcontent {
         padding: 10% 5%;
         height: 80%;
     }
-    
+
     .tabcontent p {
         font-size: 80%
     }
-    
+
     .row h3 {
         word-spacing: 20px;
         font-size: 60%;
         margin: 5%;
     }
+
     .bar-container {
         width: 90%;
     }
+
     .bar-skills {
         padding-right: 10%;
         line-height: 10px;
         margin-bottom: 10px;
     }
-    
+
     .content ul {
         font-size: 80%;
     }
-    
-        #myBtn {
-        bottom: 2%; /* Place the button at the bottom of the page */
-        right: 1%; /* Place the button 30px from the right */
+
+    #myBtn {
+        bottom: 2%;
+        /* Place the button at the bottom of the page */
+        right: 1%;
+        /* Place the button 30px from the right */
     }
 }

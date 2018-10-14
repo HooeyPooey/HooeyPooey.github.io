@@ -1,10 +1,14 @@
+/*All right reservied by Huipu Xu*/
+
     /*for sticky section*/
     $(document).ready(function () {
         $('.js--section-features').waypoint(function (direction) {
             if (direction == "down") {
                 $('nav').addClass('sticky');
+                $('.mobile-nav-icon i').css('color', 'black');
             } else {
                 $('nav').removeClass('sticky');
+                $('.mobile-nav-icon i').css('color', 'white');
             }
         }, {
             offset: '60px;'
@@ -37,14 +41,14 @@
                 }
             });
         });
-        
+
         /*Animation for scrolling*/
         $('.js--wp-1').waypoint(function (direction) {
             $('.js--wp-1').addClass('animated fadeIn');
         }, {
             offset: '50%;'
         });
-        
+
         $('.js--wp-2').waypoint(function (direction) {
             $('.js--wp-2').addClass('animated shake');
         }, {
@@ -125,22 +129,6 @@
 
     // Get the element with id="defaultOpen" and click on it
     document.getElementById("defaultOpen").onmouseover();
-
-    /*
-    //Open Image
-    function openImg(imgs) {
-      // Get the expanded image
-      var expandImg = document.getElementById("expandedImg");
-      // Get the image text
-      var imgText = document.getElementById("imgtext");
-      // Use the same src in the expanded image as the image being clicked on from the grid
-      expandImg.src = imgs.src;
-      // Use the value of the alt attribute of the clickable image as text inside the expanded image
-      imgText.innerHTML = imgs.alt;
-      // Show the container element (hidden with CSS)
-      expandImg.parentElement.style.display = "block";
-    }
-    */
 
     //popup
     function myFunction() {
