@@ -1,14 +1,14 @@
 * {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: Helvetica, sans-serif;
 }
 
-header{
-    background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.6)),to(rgba(0, 0, 0, 0.6))),url(img/hero.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.7)),url(img/cover2.jpg);
-    background-size:cover;
+header {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(img/hero.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(img/cover2.jpg);
+    background-size: cover;
     background-position: center;
     height: 35vh;
     background-attachment: fixed;
@@ -29,11 +29,11 @@ nav {
     text-decoration: none;
     padding-bottom: 1px;
     -webkit-transition: color 0.2s;
-    transition: color 0.2s; 
+    transition: color 0.2s;
 }
 
 .home-page:hover,
-.home-page:active{
+.home-page:active {
     color: #ccc;
 }
 
@@ -48,7 +48,7 @@ body {
     top: 20%;
     left: 50%;
     padding-left: 20%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
 /* Style the tab */
@@ -56,7 +56,7 @@ body {
     float: left;
     border-right: 1px solid #ccc;
     width: 15%;
-    height:auto;
+    height: auto;
     margin: 4% 5%;
 }
 
@@ -91,7 +91,7 @@ body {
     padding-top: 3%;
 }
 
-.list-content  {
+.list-content {
     display: block;
     text-align: left;
 }
@@ -107,29 +107,30 @@ body {
     font-size: 100%;
     font-weight: 200;
 }
-.list-content ul{
+
+.list-content ul {
     font-size: 90%;
     list-style: none;
     font-weight: 300;
     border-bottom: 1px solid #ccc;
 }
 
-li{
+li {
     margin: 2% 0;
 }
 
 /*----------LINKS----------*/
-  a:link,
-  a:visited {
+a:link,
+a:visited {
     color: #e67e22;
     text-decoration: none;
     padding-bottom: 1px;
     -webkit-transition: color 0.2s;
-    transition: color 0.2s; 
+    transition: color 0.2s;
 }
 
-  a:hover,
-  a:active{
+a:hover,
+a:active {
     color: #555;
 }
 
@@ -146,19 +147,19 @@ footer {
 }
 
 
-#footer-icons{
+#footer-icons {
     display: inline-block;
-    margin:1% 30%;
+    margin: 1% 30%;
     padding-right: 30%;
 }
 
 .statement {
     display: inline-block;
-    margin:1% 35%;
+    margin: 1% 35%;
 }
 
-.statement p{
-    color: 	#A9A9A9;
+.statement p {
+    color: #A9A9A9;
 }
 
 .footer-icons {
@@ -185,7 +186,7 @@ footer {
 }
 
 .footer-icons li a:link,
-.footer-icons li a:visited{
+.footer-icons li a:visited {
     font-size: 160%;
 }
 
