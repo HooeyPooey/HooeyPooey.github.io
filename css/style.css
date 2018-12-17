@@ -1,0 +1,463 @@
+/*
+Greek color plate:
+~~~~~~~~~~~~~~~~~~~~~~
+    Dark blue: #034488
+    blue: #178fd6
+    light blue: #ccdde8
+    grey: #edece8
+    Rice: #fffcf6
+    white: #f8f8f6
+*/
+
+body {
+    background-color: #ede8e4;
+    font-family: 'Nunito', sans-serif;
+}
+
+.content {
+    margin-top: 4rem;
+}
+
+/*Nav section*/
+#mainNavbar {
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+#mainNavbar .nav-link{
+    color: #178fd6;
+}
+
+#mainNavbar .nav-link:hover {
+    color: #f8f8f8;
+}
+
+#mainNavbar .navbar-brand img {
+    border-radius: 50%;
+}
+
+/*
+	First section
+*/
+
+#first h3 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 100;
+	color: #178fd6;
+}
+
+#first h5 {
+    font-size: 0.8rem;
+	color: #178fd6;
+}
+
+.card {
+    background: transparent;
+    border:none;
+}
+
+#first .card-img-top{
+    border-radius: 50%;
+    border-width: 0.5rem;
+ 	border: 0.3rem solid #f8f8f6;
+}
+
+/* cover-img part*/
+.cover-img {
+	background-image: url(img/b-1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 30rem;
+}
+
+#first .cover-img h5,
+#first .cover-img h3 {
+	color:white;
+}
+
+
+@media (max-width: 1200px) {
+    #first h2 {
+        font-size: 3rem;
+        font-weight: 100;
+    }
+}
+
+/*
+	Second section
+*/
+
+/**************/
+/*portfolio section*/
+/**************/
+#second .photo-small img{
+	border: 1px solid #BFBFBF;
+	border-radius: 5%;
+	-webkit-box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+    box-shadow: 12px 15px 8px rgba(0,0,0, 0.3);
+	z-index: 5;
+}
+
+
+#second h2 {
+    color: #178fd6;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+#second p {
+    font-size: 1rem;
+    color: #178fd6;
+}
+
+/*gallery section*/
+.photo-album {
+	background-image: url(img/b-2.jpg);
+	background-size: cover;
+	background-color: #c1afa8;
+	border-radius: 5%;
+}
+
+.amp {
+    font-family:Garamond,Baskerville,Georgia,serif !important;
+    font-style:italic;
+    font-weight:normal;
+    border: none;
+}
+
+a.polaroid {
+    display: block;
+    text-decoration: none;
+	text-align: center;
+	color: #178fd6;
+    padding: 10px 10px 20px 10px;
+    width: 150px;
+    border: 1px solid #BFBFBF;
+    background-color: #f8f8f6;
+    z-index: 5;
+    font-size: 0.5em;
+    -webkit-box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+    box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+    -webkit-transition: -webkit-transform 0.5s ease-in;
+}
+a.polaroid:hover,
+a.polaroid:focus,
+a.polaroid:active {
+    z-index: 999;
+    border-color: #6A6A6A;
+    -webkit-box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+    box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+a img {
+    border: none;
+    display: block;
+}
+
+
+.photo-album .medium {
+    width:  20rem;
+    padding:   0.5rem; 
+    font-size: 1em;
+	border-radius: 5%;
+}
+.photo-album .medium img {
+	width: 20rem;	
+	margin: 0 auto;
+	border-radius: 5%;
+}
+
+.photo-album .img1 {
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg);
+}
+
+.photo-album .img4 {
+    -webkit-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+}
+
+/**************/
+/*skill part*/
+/************/
+
+#second .see-more span{
+	color: #178fd6;
+}
+
+#second .see-more span:hover {
+	color: #ffffff;
+}
+
+#second .see-more a {
+	text-decoration: none;
+}
+
+#skills {
+	border: 3x solid grey;
+	border-style: box;
+	border-radius: 5%;
+	background-color: #81c8ee;
+	-webkit-box-shadow:;
+		background-image: url(img/b-3.jpg);
+	background-size: cover;
+}
+
+/* Skill list items */
+
+#skills li {
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  font-weight: lighter;
+  padding: 0;
+}
+
+#skills ul {
+  color: #2d2d2d;
+  text-align: left;
+  list-style-type: none;
+}
+
+
+/* Containers for skill levels */
+
+.box {
+	height: 1em;
+	width: 100%;
+	border: .1em solid #2D2D2D;
+	border-radius: 3%;
+	display: inline-block;
+	margin: .5em 0 2em;
+	border-radius: 5%;
+
+}
+
+/* Skill levels */
+
+#one {
+	height: 0.8em;
+	width: 80%;
+	background: #284277;
+	display: block;
+	border-radius: 5%;
+}
+
+#two {
+	height: 0.8em;
+	width: 70%;
+	background: #006bbd;
+	display: block;
+	border-radius: 5%;
+}
+
+#three {
+	height: 0.8em;
+	width: 70%;
+	background: #dcf3d0;
+	display: block;
+	border-radius: 5%;
+}
+
+#four {
+	height: 0.8em;
+	width: 80%;
+	background: #c1afa8;
+	display: block;
+	border-radius: 5%;
+}
+
+#five {
+	height: 0.8em;
+	width: 60%;
+	background: #fef6dd;
+	display: block;
+	border-radius: 5%;
+}
+
+#six {
+	height: 0.8em;
+	width: 65%;
+	background: #f8f8f8;
+	display: block;
+	border-radius: 5%;
+}
+
+
+/* Large hover state for animation */
+
+#skills:hover #one,
+#skills:hover #two,
+#skills:hover #three,
+#skills:hover #four,
+#skills:hover #five,
+#skills:hover #six {
+  -webkit-animation: grow 1.4s .3s cubic-bezier(0.39, 0.07, 0.16, 0.97);
+  animation: grow 1.4s .3s cubic-bezier(0.39, 0.07, 0.16, 0.97);
+}
+
+
+/* Keyframe */
+
+@-webkit-keyframes grow {
+  0% {
+    width: 0;
+  }
+  100% {
+    -webkit-transform: 100%;
+    transform: 100%;
+  }
+}
+
+@keyframes grow {
+  0% {
+    width: 0;
+  }
+  100% {
+    -webkit-transform: 100%;
+    transform: 100%;
+  }
+}
+
+/************/
+/* education */
+/************/
+
+#education {
+	background-color: #ede8e4;
+}
+
+#card-1,
+#card-2 {
+	border-radius: 3%;
+	-webkit-box-shadow: 12px 15px 8px rgba(0,0,0, 0.3);
+	box-shadow: 12px 15px 8px rgba(0,0,0, 0.3);
+	z-index: 5;
+}
+
+#card-1 ul,
+#card-2 ul {
+	color: #034488;
+	text-align: left;
+	list-style-type: none;	
+}
+
+#card-1 {
+	background-color: orange;
+}
+
+#card-2 {
+	background-color: white;
+}
+
+#card-1 ul li,
+#card-2 ul li{
+	
+	font-size: 0.8rem;
+	padding: 0.3rem;
+	word-spacing: 0.2rem;
+}
+
+#card-1 ul li {
+	color: #f8f8f8;
+}
+
+#card-2 ul li {
+	color: #111111;
+}
+#card-1 ul li i,
+#card-2 ul li i {
+	padding-right:  1rem
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+    #card-1 h5,
+	#card-2 h5{
+        font-size: 0.7rem;
+        font-weight: 100;
+    }
+	
+	#card-1 ul,
+	#card-2 ul {
+		padding: 0;
+		margin: 0;
+    }
+	
+	#card-1 div,
+	#card-2 div {
+		padding: 0;
+		margin: 0;
+    }
+	
+	#card-1 ul li,
+	#card-2 ul li{
+        font-size: 0.6rem;
+		padding: 0;
+    }
+}
+
+
+/* go to top*/
+.top {
+  background: none repeat scroll 0 0 padding-box #1099dd;
+  bottom: 4rem;
+  border: 1px solid #1099dd;
+  border-radius: 50%;
+  color: #ffffff;
+  display: none;
+  font-size: 12px;
+  opacity: 0.8;
+  padding: 0.5rem;
+  position: fixed;
+  right: 1rem;
+  text-decoration: none;
+  z-index: 999;
+}
+
+.top:hover,
+.top:focus,
+.top:active,
+.top:visited {
+  color: #fff;
+  outline: 0;
+  text-decoration: none;
+}
+
+/************/
+/* footer */
+/************/
+#footer p {
+	font-size: 1rem;
+	background-color: #178fd6;
+}
+
+
+@media (max-width: 768px) {
+	.content {
+		padding: 0;
+		margin: 0;
+	}
+
+	#card-1 h5,
+	#card-2 h5{
+		font-size: 0.7rem;
+		padding: 0;
+	}
+	
+	#card-1 ul,
+	#card-2 ul,
+	#card-1 ul li,
+	#card-2 ul li{
+		padding: 0;
+		margin: 0;
+	}
+	
+	#card-1 ul li,
+	#card-2 ul li{
+		font-size: 0.5rem;
+	}
+}
+}
+

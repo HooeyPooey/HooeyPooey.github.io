@@ -49,7 +49,7 @@ function dice_roll() {
         //2, display the number
         var diceDOM = document.querySelector('.dice');
         diceDOM.style.display = 'block';
-        diceDOM.src = 'resources/img/dice/dice-' + dice + '.png'; //match pic to dice number.
+        diceDOM.src = 'img/dice/dice-' + dice + '.png'; //match pic to dice number.
 
 
         //3, update the round score if the rolled number is was not 1. 

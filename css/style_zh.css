@@ -44,8 +44,6 @@
   left: 50%;
   right: false;
   bottom: false;
-  font-size: 120%;
-  font-weight: 600;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
@@ -54,8 +52,8 @@
 
 body {
   font-family: 'Open Sans';
-  font-size: 100%;
-  letter-spacing: 1px;
+  font-size: 18px;
+  letter-spacing: 0px;
   font-weight: 400;
   line-height: 28px;
   background: url("http://kingofwallpapers.com/leaves/leaves-016.jpg") right no-repeat;
@@ -75,11 +73,12 @@ body:before {
 }
 
 .caps {
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 
 .justified {
-  text-align: center;
+  text-align: justify;
+  font-size: 100%;
 }
 
 p.light {
@@ -98,11 +97,10 @@ h2 {
 h3 {
   font-family: 'Open Sans';
   font-size: 21px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   font-weight: 600;
   line-height: 28px;
   color: #000;
-  text-transform: uppercase;
 }
 
 .page {
@@ -209,7 +207,7 @@ h3 {
 }
 
 .social {
-  padding-left: 40px;
+  padding-left: 50px;
   margin-bottom: 20px;
   cursor: pointer;
 }
@@ -229,21 +227,21 @@ h3 {
 }
 
 .social.web:before {
-  background: url("/resources/css/img/web.png") center no-repeat;
+  background: url("img/web.png") center no-repeat;
 }
 
 .social.github:before {
-  background: url("/resources/css/img/github.png") center no-repeat;
+  background: url("img/github.png") center no-repeat;
 }
 
 .social.linked-in:before {
-  background: url("/resources/css/img/linkedin.png") center no-repeat;
+  background: url("img/linkedin.png") center no-repeat;
 }
 
 .side-header {
   font-family: 'Open Sans';
   font-size: 18px;
-  letter-spacing: 3px;
+  letter-spacing: 4px;
   font-weight: 600;
   line-height: 15px;
   margin: 30px auto 10px;
@@ -264,7 +262,7 @@ h3 {
 }
 
 .content-container>* {
-  margin: 0 auto 15px;
+  margin: 0 auto 25px;
 }
 
 .content-container>h3 {
@@ -272,7 +270,7 @@ h3 {
 }
 
 .content-container>p.long-margin {
-  margin: 0 auto 40px;
+  margin: 0 auto 50px;
   text-align: justify;
 }
 
@@ -294,24 +292,14 @@ h3 {
   text-align: center;
   font-family: 'Open Sans';
   font-size: 18px;
-  letter-spacing: 3px;
+  letter-spacing: 6px;
   font-weight: 600;
   line-height: 28px;
-  margin-bottom: 20px;
 }
 
 a {
   text-decoration: none;
-  font-size: 75%;
-}
-
-ul {
-  display: block;
-  list-style-type: disc;
   font-size: 80%;
-  text-align: justify;
-  padding: 1% auto;
-
 }
 
 .switch {
@@ -330,7 +318,6 @@ ul {
   right: 50px;
   color: black;
 }
-
 
 @media screen and (max-width: 1150px) {
   .name {
