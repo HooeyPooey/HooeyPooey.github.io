@@ -1,0 +1,42 @@
+body {
+	background-color: #232323;
+}
+
+
+header {
+	background-color: #3591d0;
+	color: aliceblue;
+}
+
+#newGame,
+#goodLuck {
+	font-size: 0.9rem;	
+}
+
+#hard,
+#middle,
+#easy {
+	font-size: 0.7rem;
+}
+
+button {
+	
+}
+
+/*
+.container {
+	width: 60%;
+}
+*/
+
+.box {
+	background-color: aqua;
+	padding-bottom: 20%;
+	margin: 3%;
+	border-radius: 8%;
+	transition: background 1.5s;
+}
+
+.effect {
+	background-color: grey;
+}
