@@ -1,6 +1,9 @@
 var circles = [];
+var circleSmall = [];
 var triangles = [];
 var stars = [];
+var rectangles = [];
+var Hexagons = [];
 
 function onFrame(event) {
 	for (var i = 0; i < circles.length; i++) {
@@ -17,6 +20,40 @@ function onFrame(event) {
 		//stars[x].fillColor.hue +=1;
 		stars[x].scale(0.9);
 	}
+	
+	for (var y = 0; y < rectangles.length; y++) {
+		//rectangles[y].fillColor.hue +=1;
+		rectangles[y].scale(1.2);
+	}
+	
+	for (var t = 0; t < Hexagons.length; t++) {
+		//Hexagons[t].fillColor.hue +=1;
+		var item = project.activeLayer.children[t];
+		item.position.x += item.bounds.width / 20;
+
+		// If the item has left the view on the right, move it back
+		// to the left:
+		if (item.bounds.left > view.size.width) {
+			item.position.x = -item.bounds.width;
+		}
+		Hexagons[t].fillColor.hue +=1;
+		Hexagons[t].scale(1);
+		Hexagons[t].rotate(3);
+		
+	}
+	
+	for (var l = 0; l < circleSmall.length; l++) {
+		var item = project.activeLayer.children[l];
+		item.position.y += item.bounds.height / 20;
+
+		// If the item has left the view on the right, move it back
+		// to the left:
+		if (item.bounds.bottom> view.size.height) {
+			item.position.y = -item.bounds.height;
+			//circleSmall[l].scale = (0.9);
+		}
+		circleSmall[l].fillColor.hue +=1;
+	}
 }
 
 
@@ -26,6 +63,7 @@ function onKeyDown(event) {
 	var point = maxPoint * randomPoint;//0~maxPoint
 	
 	if (keyCircles[event.key]) {
+		//circles
 		var newCircle = new Path.Circle(point,300);
 		
 		newCircle.fillColor = keyCircles[event.key].color;
@@ -34,6 +72,7 @@ function onKeyDown(event) {
 		circles.push(newCircle);
 
 	} else if (keyTriangles[event.key]) {
+		//Trangles
 		var triangle = new Path.RegularPolygon(point, 3, 400);
 		
 		triangle.fillColor = keyTriangles[event.key].color;
@@ -42,12 +81,7 @@ function onKeyDown(event) {
 		triangles.push(triangle);
 		
 	} else if (keyStars[event.key]) {
-		//var center = point;
-		//var angle = 5;
-		//var radius1 = 20;
-		//var radius2 = 40;
-		//var newStar = new Path.Star(point,5, 10, 20);
-		
+		//stars
 		var newStar = new Path.Star({
 			center: point,
 			points: 5,
@@ -56,9 +90,33 @@ function onKeyDown(event) {
 			fillColor: randomColor()
 		});
 		
-		//newStar.fillColor = keyStars.color;
 		keyStars[event.key].sound.play();
 		stars.push(newStar);
+		
+	} else if (keyRects[event.key]) {
+		//rectangles
+		var newRect = new Path.RegularPolygon(point, 4, 200);
+		
+		newRect.fillColor = keyRects[event.key].color;
+		keyRects[event.key].sound.play();
+		rectangles.push(newRect);
+		
+	} else if (keyHexagons[event.key]) {
+		//rectangles
+		var newHexagon = new Path.RegularPolygon(point, 6, 20);
+		
+		//newHexagon.fillColor = keyHexagons[event.key].color;
+		newHexagon.fillColor = randomColor();
+		keyHexagons[event.key].sound.play();
+		Hexagons.push(newHexagon);
+		
+	} else if (keyCirclesSmall[event.key]) {
+		//small circles
+		var newCirclesSmall = new Path.Circle(point, 30);
+		
+		newCirclesSmall.fillColor = keyCirclesSmall[event.key].color;
+		keyCirclesSmall[event.key].sound.play();
+		circleSmall.push(newCirclesSmall);
 	}
 }
 
@@ -70,7 +128,7 @@ function randomColor() {
     return "rgb"+"(" + randomNum1 + ", " + randomNum2 + ", " + randomNum3 + ")";
 }
 
-var keyStars = {
+var keyRects = {
 	g: {
 		color: "rgb(63, 10, 4)",
 		sound: new Howl({
@@ -85,7 +143,11 @@ var keyStars = {
 		color: "rgb(39, 191, 210)",
 		sound: new Howl({
 		src: ['sounds/flash-3.mp3']})
-	},
+	}
+}
+
+
+var keyStars = {
 	j: {
 		color: "rgb(123, 127, 86)",
 		sound: new Howl({
@@ -104,7 +166,8 @@ var keyStars = {
 }
 
 
-var keyTriangles = {
+var keyHexagons = {
+	
 	a: {
 		color: "rgb(126, 209, 223)",
 		sound: new Howl({
@@ -119,7 +182,11 @@ var keyTriangles = {
 		color: "rgb(51, 25, 219)",
 		sound: new Howl({
 		src: ['sounds/clay.mp3']})
-	},
+	}
+}
+
+var keyTriangles = {
+	
 	d: {
 		color: "rgb(134, 155, 120)",
 		sound: new Howl({
@@ -137,8 +204,7 @@ var keyTriangles = {
 	}
 }
 
-var keyCircles = {
-
+var keyCirclesSmall = {
 	m: {
 		color: "rgb(145, 184, 242)",
 		sound: new Howl({
@@ -168,7 +234,11 @@ var keyCircles = {
 		color: "rgb(83, 222, 11)",
 		sound: new Howl({
 		src: ['sounds/ufo.mp3']})
-	},
+	}
+}
+
+var keyCircles = {
+
 	s: {
 		color: "rgb(99, 244, 191)",
 		sound: new Howl({
@@ -225,13 +295,3 @@ var keyCircles = {
 		src: ['sounds/ufo.mp3']})
 	}
 }
-
-/*
-	for (var x = 0; x < 1500; x+=100) {
-		for(var y = 0; y < 1500; y+=100) {
-			var myCircle = new Path.Circle(new Point(x+20, y+20), 10);
-			myCircle.fillColor = 'purple';
-			// new Path.Circle(new Point(x+20, y+20), 10).fillColor = 'purple';
-		}
-	}
-*/

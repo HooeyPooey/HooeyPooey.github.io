@@ -2,13 +2,14 @@ body {
 	background: #fffcf6;
 	color: #178fd6;
 	font-family: 'Helvetica', Sans-Serif;
+	font-size: 0.9rem;
 	margin: 2%;
 }
 
 .skillset .skillbar {
 	height: 2rem;
 	color: #0D0E0E;
-	width: 0rem;
+	width: 1rem;
 	border-radius: 0.4rem;
 	text-align: left;
 	padding-left: 2rem;
@@ -19,7 +20,7 @@ body {
 }
 
 .skillset .skillbar-container {
-	width: 90%;
+	width: 100%;
 	border: 1px solid #212121;
 	background-color:#fffcf6;
 	border-radius: 0.5rem;
@@ -27,8 +28,8 @@ body {
 }
 
 .skillset {
-	border: 2px black solid;
-	border-radius: 12px;
+	border: 1px black solid;
+	border-radius: 2rem;
 	padding: 2%;
 	width: 100%;
 	background: black;

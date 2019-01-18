@@ -29,8 +29,17 @@ $(document).ready(function () {
     },
 			{
 				"name": "NodeJS",
-				"skill": 2
+				"skill": 3
     },
+			{
+				"name": "Paper.js",
+				"skill": 2
+	},
+			{
+				"name": "howler.js",
+				"skill": 2 
+			}
+			
   ],
 		"databases": [
 			{
@@ -64,7 +73,7 @@ $(document).ready(function () {
 				"skill": 4
 		    },
 			{
-				"name": "Git",
+				"name": "Git/Github",
 				"skill": 3
 		    },
 			{
