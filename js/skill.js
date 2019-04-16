@@ -26,7 +26,11 @@ $(document).ready(function () {
 			{
 				"name": "Bootstrap",
 				"skill": 4
-    },
+		},
+		{
+			"name": "Vue",
+			"skill": 3
+		},
 			{
 				"name": "NodeJS",
 				"skill": 3
@@ -34,12 +38,11 @@ $(document).ready(function () {
 			{
 				"name": "Paper.js",
 				"skill": 2
-	},
+		},
 			{
 				"name": "howler.js",
 				"skill": 2 
 			}
-			
   ],
 		"databases": [
 			{
