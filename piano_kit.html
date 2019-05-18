@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>JS Drum Kit</title>
+  <link rel="stylesheet" href="css/style_piano.css">
+</head>
+
+<body>
+  <div class="keys">
+    <div data-key="81" class="key">
+      <kbd>Q</kbd>
+      <span class="sound">.do(C)</span>
+    </div>
+    <div data-key="87" class="key">
+      <kbd>W</kbd>
+      <span class="sound">.re(D)</span>
+    </div>
+    <div data-key="69" class="key">
+      <kbd>E</kbd>
+      <span class="sound">.mi(E)</span>
+    </div>
+    <div data-key="82" class="key">
+      <kbd>R</kbd>
+      <span class="sound">.fa(F)</span>
+    </div>
+    <div data-key="84" class="key">
+      <kbd>T</kbd>
+      <span class="sound">.sol(G)</span>
+    </div>
+    <div data-key="89" class="key">
+      <kbd>Y</kbd>
+      <span class="sound">.la(A)</span>
+    </div>
+    <div data-key="85" class="key">
+      <kbd>U</kbd>
+      <span class="sound">.si(B)</span>
+    </div>
+    <div data-key="73" class="key">
+      <kbd>I</kbd>
+      <span class="sound">..do(C)</span>
+    </div>
+    <div data-key="79" class="key">
+      <kbd>O</kbd>
+      <span class="sound">..re(D)</span>
+    </div>
+    <div data-key="80" class="key">
+      <kbd>P</kbd>
+      <span class="sound">..mi(E)</span>
+    </div>
+  </div>
+
+  <div class="keys">
+    <div data-key="65" class="key">
+      <kbd>A</kbd>
+      <span class="sound">do(C)</span>
+    </div>
+    <div data-key="83" class="key">
+      <kbd>S</kbd>
+      <span class="sound">re(D)</span>
+    </div>
+    <div data-key="68" class="key">
+      <kbd>D</kbd>
+      <span class="sound">mi(E)</span>
+    </div>
+    <div data-key="70" class="key">
+      <kbd>F</kbd>
+      <span class="sound">fa(F)</span>
+    </div>
+    <div data-key="71" class="key">
+      <kbd>G</kbd>
+      <span class="sound">sol(G)</span>
+    </div>
+    <div data-key="72" class="key">
+      <kbd>H</kbd>
+      <span class="sound">la(A)</span>
+    </div>
+    <div data-key="74" class="key">
+      <kbd>J</kbd>
+      <span class="sound">si(B)</span>
+    </div>
+    <div data-key="75" class="key">
+      <kbd>K</kbd>
+      <span class="sound">do..(C)</span>
+    </div>
+    <div data-key="76" class="key">
+      <kbd>L</kbd>
+      <span class="sound">re..(D)</span>
+    </div>
+  </div>
+
+  <div class="keys">
+    <div data-key="90" class="key">
+      <kbd>Z</kbd>
+      <span class="sound">do.(C)</span>
+    </div>
+    <div data-key="88" class="key">
+      <kbd>X</kbd>
+      <span class="sound">re.(D)</span>
+    </div>
+    <div data-key="67" class="key">
+      <kbd>C</kbd>
+      <span class="sound">mi.(E)</span>
+    </div>
+    <div data-key="86" class="key">
+      <kbd>V</kbd>
+      <span class="sound">fa.(F)</span>
+    </div>
+    <div data-key="66" class="key">
+      <kbd>B</kbd>
+      <span class="sound">sol.(G)</span>
+    </div>
+    <div data-key="78" class="key">
+      <kbd>N</kbd>
+      <span class="sound">la.(A)</span>
+    </div>
+    <div data-key="77" class="key">
+      <kbd>M</kbd>
+      <span class="sound">si.(B)</span>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>Hisoty of Input (Total: <span id="count">0</span>)</h2>
+    <p></p>
+  </div>
+
+  <!--First line-->
+  <audio data-key="81" src="sounds/C5.MP3"></audio>
+  <audio data-key="87" src="sounds/D5.MP3"></audio>
+  <audio data-key="69" src="sounds/E5.MP3"></audio>
+  <audio data-key="82" src="sounds/F5.MP3"></audio>
+  <audio data-key="84" src="sounds/G5.MP3"></audio>
+  <audio data-key="89" src="sounds/A5.MP3"></audio>
+  <audio data-key="85" src="sounds/B5.MP3"></audio>
+  <audio data-key="73" src="sounds/C4.MP3"></audio>
+  <audio data-key="79" src="sounds/D4.MP3"></audio>
+  <audio data-key="80" src="sounds/E4.MP3"></audio>
+  <!--Second line-->
+  <audio data-key="65" src="sounds/1 C.mp3"></audio>
+  <audio data-key="83" src="sounds/2 D.mp3"></audio>
+  <audio data-key="68" src="sounds/3 E.mp3"></audio>
+  <audio data-key="70" src="sounds/4 F.mp3"></audio>
+  <audio data-key="71" src="sounds/5 G.mp3"></audio>
+  <audio data-key="72" src="sounds/6 A.mp3"></audio>
+  <audio data-key="74" src="sounds/7 B.mp3"></audio>
+  <audio data-key="75" src="sounds/C7.MP3"></audio>
+  <audio data-key="76" src="sounds/D7.MP3"></audio>
+  <!--Third line-->
+  <audio data-key="90" src="sounds/C6.MP3"></audio>
+  <audio data-key="88" src="sounds/D6.MP3"></audio>
+  <audio data-key="67" src="sounds/E6.MP3"></audio>
+  <audio data-key="86" src="sounds/F6.MP3"></audio>
+  <audio data-key="66" src="sounds/G6.MP3"></audio>
+  <audio data-key="78" src="sounds/A6.MP3"></audio>
+  <audio data-key="77" src="sounds/B6.MP3"></audio>
+
+  <script type="text/javascript" src="js/piano_kit.js"></script>
+</body>
+
+</html>
